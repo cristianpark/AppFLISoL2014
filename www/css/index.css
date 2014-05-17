@@ -1,0 +1,45 @@
+/**
+ * Archivo estilos generales
+ * 
+ * @package 	AppFLISoL
+ * @author		Cristian Gómez Alvarez <cristianpark@gmail.com>
+ * @date		Mayo 17 de 2014
+ *
+**/
+
+.pagina{
+	background-color: #152233;
+	color: white;
+}
+
+.slmarcador{
+	background: transparent;
+   	border: 0.2em solid rgba(255,235,0,1);
+   	border-radius: 0;
+   	color: white;
+    -webkit-appearance: none;	
+}
+
+.tbpartidos{
+	border: 0.7em solid rgba(255,255,255,0.5);
+	border-radius: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.titulo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 120%;
+}
+
+#DVimagen{
+	width: 100%;
+}
+
+#DVimagen img{
+	width: 80%;
+}

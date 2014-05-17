@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+ * Index aplicación para FLISoL 2014
+ * 
+ * @package 	AppFLISoL
+ * @author		Cristian Gómez Alvarez <cristianpark@gmail.com>
+ * @date		Mayo 17 de 2014
+ *
+-->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AppFLISoL Manizales</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	
+	<link rel="stylesheet" href="css/jquery/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/equipos.css" />
+	
+	<script src="js/jquery/jquery-2.1.0.min.js"></script>
+	<script src="js/jquery/jquery.mobile-1.4.2.min.js"></script>
+	
+	<!-- JavaScript code files-->
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/partidos.js"></script>
+	
+	<script src="cordova.js"></script> <!-- Este lo importa el compilador de cordova automáticamente en el momento de ejecución -->
+	<script src="js/index.js"></script>
+	
+	<script>
+		/**
+		 * Función para inicializar la aplicación
+		 */
+		function inicializarApp(){
+			// Register the event listener
+			document.addEventListener("deviceready", asignarEventos, false);
+		}
+	</script>
+</head> 
+
+<body onload="inicializarApp()">
+    <!-- Página pronósticos -->
+    <div data-role="page" class="pagina" id="PGpronosticos">
+    	<div data-role="header" style="background-color: #152233; border: 0px;">
+    		<div id="DVimagen" align="center">
+                <img src="img/flisol.png" />
+            </div>
+    	</div>
+    	
+        <div role="main" class="ui-content">
+            <h1 class="titulo">Partidos del Mundial</h1>
+		
+            <div id="DVpartidos">
+            </div>
+        </div><!-- Fin página pronósticos -->
+
+        <div data-role="footer" align="center" data-position="absolute" data-tap-toggle="false" data-theme="a" style="border:none; background-color: white; color: black; height: 2em;">
+            http://cristianpark.wordpress.com
+        </div>
+    </div>
+</body>
+</html>
